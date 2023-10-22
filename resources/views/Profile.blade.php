@@ -38,15 +38,17 @@
       <th scope="col">Nama</th>
       <th scope="col">NIM</th>
       <th scope="col">Alamat</th>
+      <th scope="col">Jenis kelamin</th>
       <th scope="col">keseharian</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>I NENGAH LASTRA WIRA PRIMADIKA</td>
-      <td>2201010202</td>
-      <td>Jln. Tukad Badung X no. 12 B</td>
+      <td>{{ $biodata['nama'] }}</td>
+      <td>{{ $biodata['NIM'] }}</td>
+      <td>{{ $biodata['alamat'] }}</td>
+      <td>{{ $biodata['JK'] }}</td>
       <td><a href="{{ route('halaman work') }}">Work</a></td>
     </tr>
   </tbody>
